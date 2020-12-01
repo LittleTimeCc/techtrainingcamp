@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowArticleActivity">
+
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/wenzhang"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:gravity="center"
+            android:text="文章"
+            android:textSize="60px" />
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_weight="1.0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/ll_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                    android:text="TextView" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tx_news_simple_photos_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/tx_news_simple_photos_author"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@android:color/darker_gray" />
+
+            </LinearLayout>
+        </ScrollView>
+        <ImageButton android:gravity="center_horizontal"
+            android:id="@+id/button1"
+            android:src="@drawable/ic_launcher_foreground"
+            android:layout_width="100px"
+            android:layout_height="100px" android:background="#00000000" >
+            android:layout_alignParentBottom ="true"
+            android:layout_marginLeft="10px"
+            android:scaleType="fitXY"
+        </ImageButton>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
